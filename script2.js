@@ -8,7 +8,7 @@ let deont=localStorage.getItem('deont');
 
 function checkLoadedPage() {
     var currentURL = window.location.href;
-    if (currentURL.includes("quizpage")) {
+    if (currentURL.includes("quizcompass")) {
        Nextq();
     } 
 }
