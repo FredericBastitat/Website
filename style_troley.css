@@ -1,0 +1,51 @@
+body{
+    background-color: black;
+    margin-top: 150px;
+}
+
+h1{
+    background-color: white;
+    width: 50%;
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 150%;
+    outline-width: thick;
+    outline-color: white;
+    outline-style: solid;
+    outline-offset: 5px;
+    margin-top: 50px;
+}
+
+button{
+    background-color: white;
+    outline-width: thick;
+    outline-color: white;
+    outline-style: solid;
+    outline-offset: 5px;
+    border-radius: 10px;
+    font-size: 150%;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    width: 20%;
+    padding:1px;
+    margin: 50px;
+}
+
+button:hover{
+    color: white;
+    background-color: black;
+}
+button:active{
+    transform: scale(0.96) ;
+}
+
+.answ{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
