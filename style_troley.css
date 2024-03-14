@@ -49,3 +49,34 @@ button:active{
     flex-direction: row;
     flex-wrap: nowrap;
 }
+
+@media only screen and (max-width: 600px) {
+    body{
+        margin-top: 20%;
+
+}
+
+    h1{
+        width: 75%;
+        border-radius: 10px;
+        font-size: 150%;
+        outline-offset: 5px;
+        margin-top: 15%;
+    }
+    button{
+        outline-offset: 5px;
+        border-radius: 10px;
+        font-size: 130%;
+        width: 30%;
+        padding:1px;
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+    }
+
+    .answ{
+    margin-top: 0%;
+    }
+
+
+
+}

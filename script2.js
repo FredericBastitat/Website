@@ -77,6 +77,7 @@ function ultbtn(x,lol){
 function Nextq(){
     if (questionIndex < questions.length) {
         questionElement.innerText = questions[questionIndex].question; // update text
+        
     } else {
     // Storing the data:
         localStorage.setItem('Social',social);
