@@ -10,7 +10,7 @@ body{
 
 .box{
     box-sizing: border-box;
-    position:relative; /* or absolute */
+    position:relative;
 }
 .box2{
     display: flex;

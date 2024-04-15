@@ -1,4 +1,4 @@
-const questionElement = document.getElementById('question')//link to button
+const questionElement = document.getElementById('question')
 const buttonElement = document.getElementById('agr')
 const disbuttonElement = document.getElementById('dgr')
 let questionIndex=0;
@@ -12,17 +12,14 @@ function checkLoadedPage() {
        Nextq();
     } 
     else if (currentURL.includes("results")) {
-        // Storing the data:
         let table = document.getElementById("MyTable");
         let row = document.createElement("tr");
         for (let i = 0; i < util*3; i++) {
-                // Create a new cell
                 var newCell = document.createElement('td');
                 newCell.innerHTML = "";
                 row.appendChild(newCell);
           }
           for (let i = 0; i < deont*3; i++) {
-            // Create a new cell
             var newCell = document.createElement('th');
             newCell.innerHTML = "";
             row.appendChild(newCell);
@@ -48,11 +45,10 @@ function btndgr(){
 
 function Nextq(){
     if (questionIndex < questions.length) {
-        questionElement.innerText = questions[questionIndex].question; // update text
+        questionElement.innerText = questions[questionIndex].question;
         buttonElement.innerText = questions[questionIndex].answears[0].text;
         disbuttonElement.innerText = questions[questionIndex].answears[1].text;
     } else {
-    // Storing the data:
         localStorage.setItem('deont',deont);
         localStorage.setItem('util',util);
         window.location.replace('results.html');
