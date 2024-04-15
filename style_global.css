@@ -1,0 +1,72 @@
+.menu,
+h3:hover {
+    color: white;
+    background-color: black;
+}
+
+.menu,
+h3:active {
+    transform: scale(0.96);
+}
+
+h1,
+h3,
+h4,
+h5 {
+    background-color: white;
+    outline-width: thick;
+    outline-color: white;
+    outline-style: solid;
+    outline-offset: 4px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 2.5% auto;
+    width: 20%;
+}
+
+h1 {
+    font-size: 300%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+h2 {
+    font-size: 250%;
+    margin: 4.5% auto;
+}
+
+h3 {
+    font-size: 200%;
+    padding: 1.5%;
+}
+
+h4 {
+    font-size: 120%;
+    padding: 1.5%;
+}
+a{
+    text-decoration: none;
+}
+
+.menu {
+    color: black;
+}
+
+p {
+    font-size: 100%;
+}
+
+h5{
+    width: 50%;
+    max-width: 1000px;
+    margin: auto;
+    font-size: 150%;
+    outline-offset: 5px;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    h1{
+        width: 30%;
+    }
+}

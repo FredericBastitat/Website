@@ -27,44 +27,11 @@ body{
 .menu,h3:active{
     transform: scale(0.96) ;
 }
-h1{
-    background-color: white;
-    outline-width: thick;
-    outline-color: white;
-    outline-style: solid;
-    outline-offset: 4px;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 300%;
-    margin-top: 5%;
-    width: 20%;
-    margin: 2.5% auto 0;
-}
-h2{
-    font-size:250%;
-}
-h3{
-
-    outline-width: thick;
-    outline-color: white;
-    outline-style: solid;
-    outline-offset: 4px;
-    border-radius: 10px;
-    font-size: 200%;
-    text-align: center;
-    padding: 1.5%;
-    margin: 4.5% auto 0;
-    width: 20%;
-    background-color: white;
-}
 .menu{
     color: black;
     text-decoration:none;
 }
 
-p{
-    font-size: 100%;
-}
 
 .Kant{
     background-color: white;

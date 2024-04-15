@@ -3,21 +3,6 @@ body{
     margin-top: 150px;
 }
 
-h1{
-    background-color: white;
-    width: 50%;
-    max-width: 1000px;
-    margin: auto;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 150%;
-    outline-width: thick;
-    outline-color: white;
-    outline-style: solid;
-    outline-offset: 5px;
-    margin-top: 50px;
-}
-
 button{
     background-color: white;
     outline-width: thick;
