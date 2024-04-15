@@ -10,18 +10,41 @@
     <body>
         <div class="box">
             <h1 >Test Result</h1>
-            <div class="box2">
-                <div class="meter">
+            <div class="box2" id="box2">
                     <table id="MyTable">
-                      </table>
-                </div>          
+                        <div id="circle" class="circle"></div>
+                    </table>
+                           
                 
             </div>
                 
                              
             <a class="menu" href="index.html" onclick="localStorage.clear();"><h3>Go back to menu</h3></a>
         </div>
-
+        <script>
+            const tbody = document.getElementById('MyTable');
+            const rowCount = 10;
+            const colCount = 20;
+        
+            for (let i = 0; i < rowCount; i++) {
+                const row = document.createElement('tr');
+                for (let j = 0; j < colCount; j++) {
+                    const cell = document.createElement('td');
+                    cell.classList.add((j < colCount / 2) ? 'kl' : 'kp');
+                    row.appendChild(cell);
+                }
+                tbody.appendChild(row);
+            }
+            for (let i = 0; i < rowCount; i++) {
+                const row = document.createElement('tr');
+                for (let j = 0; j < colCount; j++) {
+                    const cell = document.createElement('td');
+                    cell.classList.add((j < colCount / 2) ? 'll' : 'lp');
+                    row.appendChild(cell);
+                }
+                tbody.appendChild(row);
+            }
+        </script>
         
         <script src="script2.js"></script>   
     </body>
