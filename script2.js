@@ -170,8 +170,14 @@ function checkLoadedPage() {
             break;
         case "/personalities.html":
             let persorder=findClosestPersonalities(social,econ);
-            document.getElementById("name1").innerText=persorder[0].name;
-            console.log(social,econ);
+            function addinfo(x=[]){
+                for(let i=0;i<4;i++){
+                    document.getElementById("name"+(i+1)).innerText=persorder[i].name;
+
+                }
+            }
+            addinfo(persorder);
+            
             break;
         default:
             console.log(currentURL);
