@@ -131,19 +131,19 @@ const questions = mixArrays(socialquestions, economyquestions);
 
 function findClosestPersonalities(inputx, inputy) {
     const personalities = [
-        { name: "Winston Churchill",picture:"xdd",link:"sds", x: 6, y: 3 },
+        { name: "Winston Churchill",picture:"pictures/churchill.jpg",link:"https://cs.wikipedia.org/wiki/Winston_Churchill", x: 6, y: 3 },
         { name: "Ludwig von Mises",picture:"xdd",link:"sds", x: 9, y: -4 },
-        { name: "Bernie Sanders",picture:"xdd",link:"sds", x: -4, y: -4 },
+        { name: "Bernie Sanders",picture:"pictures/BernieSanders.jpg",link:"https://en.wikipedia.org/wiki/Bernie_Sanders", x: -4, y: -4 },
         { name: "Friedrich Hayek",picture:"xdd",link:"sds", x: 6, y: -6 },
-        { name: "Thomas Paine",picture:"xdd",link:"sds", x: -2, y: -9 },
+        { name: "Thomas Paine",picture:"pictures/ThomasPaine.jpg",link:"https://en.wikipedia.org/wiki/Thomas_Paine", x: -2, y: -9 },
         { name: "Noam Chomsky",picture:"xdd",link:"sds", x: -10, y: -8 },
         { name: "Robert Mugabe",picture:"xdd",link:"sds", x: -3, y: 6 },
         { name: "Joseph Stalin",picture:"xdd",link:"sds", x: -7, y: 8 },
         { name: "Thomas Hobbes",picture:"xdd",link:"sds", x: 7, y: 2 },
         { name: "Destiny",picture:"xdd",link:"sds", x: 0, y: -7 },
         { name: "Milton Friedman",picture:"xdd",link:"sds", x: 4, y: -7 },
-        { name: "J.F.K",picture:"xdd",link:"sds", x: -3, y: -1 },
-        { name: "Theodor Roosvelt",picture:"xdd",link:"sds", x: -4, y: 4 },
+        { name: "J.F.K",picture:"pictures/JFK.jpg",link:"https://en.wikipedia.org/wiki/John_F._Kennedy", x: -3, y: -1 },
+        { name: "T.Roosevelt",picture:"pictures/TheodorRoosevelt.jpg",link:"https://en.wikipedia.org/wiki/Theodore_Roosevelt", x: -4, y: 4 },
         { name: "xxxxxxxxxxxxxxx",picture:"xdd",link:"sds", x: 0, y: -7 }
     ];
     let closestPersonalities = [];
@@ -182,8 +182,9 @@ function checkLoadedPage() {
             let persorder=findClosestPersonalities(social,econ);
             function addinfo(x=[]){
                 for(let i=0;i<4;i++){
-                    document.getElementById("name"+(i+1)).innerText=persorder[i].name;
-
+                    document.getElementById("name"+(i+1)).innerText=x[i].name;
+                    document.getElementById("picture"+(i+1)).src=x[i].picture;
+                    document.getElementById("link"+(i+1)).href=x[i].link;
                 }
             }
             addinfo(persorder);
