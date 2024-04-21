@@ -129,18 +129,28 @@ const questions = mixArrays(socialquestions, economyquestions);
 
 //Osobnosti
 
-function findClosestPersonalities(inputValue1, inputValue2) {
+function findClosestPersonalities(inputx, inputy) {
     const personalities = [
-        { name: "Churchil", value1: 10, value2: 5 },
-        { name: "Regan", value1: 15, value2: 5 },
-        { name: "Stalin", value1: -20, value2: -10 },
-        { name: "Ghandi", value1: -10, value2: +10 }
+        { name: "Winston Churchill",picture:"xdd",link:"sds", x: 6, y: 3 },
+        { name: "Ludwig von Mises",picture:"xdd",link:"sds", x: 9, y: -4 },
+        { name: "Bernie Sanders",picture:"xdd",link:"sds", x: -4, y: -4 },
+        { name: "Friedrich Hayek",picture:"xdd",link:"sds", x: 6, y: -6 },
+        { name: "Thomas Paine",picture:"xdd",link:"sds", x: -2, y: -9 },
+        { name: "Noam Chomsky",picture:"xdd",link:"sds", x: -10, y: -8 },
+        { name: "Robert Mugabe",picture:"xdd",link:"sds", x: -3, y: 6 },
+        { name: "Joseph Stalin",picture:"xdd",link:"sds", x: -7, y: 8 },
+        { name: "Thomas Hobbes",picture:"xdd",link:"sds", x: 7, y: 2 },
+        { name: "Destiny",picture:"xdd",link:"sds", x: 0, y: -7 },
+        { name: "Milton Friedman",picture:"xdd",link:"sds", x: 4, y: -7 },
+        { name: "J.F.K",picture:"xdd",link:"sds", x: -3, y: -1 },
+        { name: "Theodor Roosvelt",picture:"xdd",link:"sds", x: -4, y: 4 },
+        { name: "xxxxxxxxxxxxxxx",picture:"xdd",link:"sds", x: 0, y: -7 }
     ];
     let closestPersonalities = [];
 
     personalities.forEach(personality => {
-        const diff1 = Math.abs(inputValue1 - personality.value1);
-        const diff2 = Math.abs(inputValue2 - personality.value2);
+        const diff1 = Math.abs(inputx - personality.x);
+        const diff2 = Math.abs(inputy - personality.y);
         const totaldiff = diff1 + diff2;
 
         closestPersonalities.push({ personality, totaldiff });
