@@ -7,10 +7,24 @@ let social=parseInt(localStorage.getItem('Social'))|| 0;;
 //tlacitko
 function ultbtn(x){
     if(questions[questionIndex].answears=="Social"){
-        social+=x
+        switch (questions[questionIndex].polarity){
+            case '+':
+                social+=x;
+                break;
+            case '-':
+                social-=x;
+                break;
+        }
     }
     else if(questions[questionIndex].answears=="Economy"){
-        econ+=x
+        switch (questions[questionIndex].polarity){
+            case '+':
+                econ+=x;
+                break;
+            case '-':
+                econ-=x;
+                break;
+        }
     }
     questionIndex += 1;  
     console.log(econ, social);
@@ -32,87 +46,108 @@ function Nextq(){
 //list
 const socialquestions=[
     {
-        question:'Democracy',
+        question:'Abortion should be restricted, with exceptions only for cases of rape, incest, or when the mothers life is at risk.',
         answears:'Social',
+        polarity:'-'
+
     },
     {
-        question:'LGBT+ rights',
+        question:'Immigration should be limited, and stricter border controls should be implemented to protect national security and preserve cultural identity.',
         answears:'Social',
+        polarity:'-'
     },
     {
-        question:'LGBT+ rights',
+        question:'Drug addiction should be treated as a public health issue, and policies should prioritize harm reduction, treatment, and decriminalization of non-violent drug offenses.',
         answears:'Social',
+        polarity:'+'
     },
     {
-        question:'LGBT+ rights',
+        question:'LGBTQ+ individuals should have equal rights and protections under the law, including the right to marry.',
         answears:'Social',
+        polarity:'+'
     },
     {
-        question:'Abortions',
+        question:'Implementing stricter gun control measures, is necessary to reduce gun violence.',
         answears:'Social',
+        polarity:'-'
     },
     {
-        question:'Democracy',
+        question:'Freedom of speech should be limited to prevent the spread of harmful ideas, dissinformation and hoaxes.',
         answears:'Social',
+        polarity:'-'
     },
     {
-        question:'Abortions',
+        question:'A Privacy rights are fundamental, and policies should protect individuals from government intrusion into their personal lives, including surveillance and data collection.',
         answears:'Social',
+        polarity:'+'
     },
     {
-        question:'Democracy',
+        question:'Freedom is more important than security.',
         answears:'Social',
+        polarity:'+'
     },
     {
-        question:'Abortions',
+        question:'Voting rights should be restricted to ensure stability and prevent undesirable outcomes, with strict eligibility criteria and limited access to voting.',
         answears:'Social',
+        polarity:'-'
     },
     {
-        question:'Democracy',
+        question:'The state should regulate the curriculum to ensure that children receive a good education. And it should not allow homeschooling.',
         answears:'Social',
+        polarity:'-'
     }
 ];
 //list
 const economyquestions=[
     {
-        question:'Free Health care',
+        question:'High-income earners should be taxed at a higher rate to fund social programs.',
         answears:'Economy',
+        polarity:'-'
+    },
+    {
+        question:'Raising the minimum wage is necessary to ensure a living wage for all workers.',
+        answears:'Economy',
+        polarity:'-'
+    },
+    {
+        question:'Reducing welfare programs encourages self-reliance and personal responsibility.',
+        answears:'Economy',
+        polarity:'+'
+    },
+    {
+        question:'Reducing regulations fosters innovation and economic freedom.',
+        answears:'Economy',
+        polarity:'+'
+    },
+    {
+        question:'Strengthening labor unions is essential to safeguard workers rights and ensure fair wages.',
+        answears:'Economy',
+        polarity:'-'
+    },
+    {
+        question:'Trade should be regulated to protect domestic industries and workers from unfair competition.',
+        answears:'Economy',
+        polarity:'-'
     },
     {
         question:'Free food',
         answears:'Economy',
+        polarity:'+'
     },
     {
-        question:'Gold',
+        question:'Reducing government spending and debt is crucial for long-term economic stability and individual freedom.',
         answears:'Economy',
+        polarity:'+'
     },
     {
-        question:'Free Health care',
+        question:'Reducing income inequality through wealth redistribution measures is a priority.',
         answears:'Economy',
+        polarity:'-'
     },
     {
-        question:'Free food',
+        question:'Limiting the power of large corporations is important to prevent exploitation and ensure fair competition.',
         answears:'Economy',
-    },
-    {
-        question:'Free Health care',
-        answears:'Economy',
-    },
-    {
-        question:'Free food',
-        answears:'Economy',
-    },
-    {
-        question:'Free Health care',
-        answears:'Economy',
-    },
-    {
-        question:'Free food',
-        answears:'Economy',
-    },
-    {
-        question:'Free food',
-        answears:'Economy',
+        polarity:'-'
     }
 ];
 //mix list

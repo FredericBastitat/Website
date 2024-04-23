@@ -1,0 +1,59 @@
+h5{
+    width: 35%;
+    height: 25%;
+    margin-bottom: 50px;
+    margin-top: 75px;    padding: 10px;
+    font-size: 200%;
+}
+
+button{
+font-size: 250%;
+height: 120px;
+padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    h5{
+        width: 80%;
+        height: 15%;
+        border-radius: 10px;
+        font-size: 120%;
+        outline-offset: 5px;
+        margin:auto;
+        margin-top: 10%;
+    }
+    button{
+        outline-offset: 5px;
+        border-radius: 10px;
+        font-size: 125%;
+        width: 40%;
+        height: 50px;
+        padding:2px 5px 2px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-right: 27.5%;
+        padding-bottom: 2.5%;
+        padding-right: 0%;
+        padding-left: 0%;
+    
+    }
+
+    .answ{
+        display:flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        box-sizing: border-box;
+        align-items: center;
+        margin: 5%;
+        position:relative;
+        margin-top: 5%;
+        -ms-transform:initial;
+        transform: initial;
+    }
+
+
+
+}

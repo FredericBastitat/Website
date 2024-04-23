@@ -1,13 +1,3 @@
-body{
-    background-color: black;
-}
-.test-choice:hover{
-    color: white;
-    background-color: black;
-}
-.test-choice:active{
-    transform: scale(0.96) ;
-}
 .test-choice{
     background-color: white;
     outline-width: thick;
