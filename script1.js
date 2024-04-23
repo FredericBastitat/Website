@@ -48,6 +48,7 @@ function Nextq(){
         questionElement.innerText = questions[questionIndex].question;
         buttonElement.innerText = questions[questionIndex].answears[0].text;
         disbuttonElement.innerText = questions[questionIndex].answears[1].text;
+        document.getElementById("trolobr").src = questions[questionIndex].answears[2].obr;
     } else {
         localStorage.setItem('deont',deont);
         localStorage.setItem('util',util);
@@ -59,21 +60,24 @@ const questions=[
         question:'A)There is a runaway trolley barreling down the railway tracks. Ahead, on the tracks, there are five people tied up and unable to move. The trolley is headed straight for them. You are standing some distance off in the train yard, next to a lever. If you pull this lever, the trolley will switch to a different set of tracks. However, you notice that there is one person on the side track. You have two (and only two) options:',
         answears:[
             {text: 'A)Do nothing, in which case the trolley will kill the five people on the main track.'},
-            {text: 'A)Pull the lever, diverting the trolley onto the side track where it will kill one person.'}
+            {text: 'A)Pull the lever, diverting the trolley onto the side track where it will kill one person.'},
+            {obr:"pictures/dilema1.png"}
         ]
     },
     {
         question:'B)A train full of passengers is going under a bridge on which you and a very fat man are standing. The tracks are broken though and if you do nothing the people inside the train will die in the crash. You have two (and only two) options:',
         answears:[
             {text: 'B)Do nothing, in which case all passangers will die.'},
-            {text: 'B)Knock the fat man down to stop the train and save all the passangers (the fat man dies).'}
+            {text: 'B)Knock the fat man down to stop the train and save all the passangers (the fat man dies).'},
+            {obr:"pictures/dilema2.png"}
         ]
     },
     {
-        question:'C)There are 10 sick patients waiting for a transplant and one healthy patient who is under anaesthesia waiting for an appendix operation. There are no donors and 10 patients die. You have two (and only two) options:',
+        question:'C)There are 10 sick patients waiting for a transplant and one healthy patient who is under anaesthesia waiting for an appendix operation. There are no donors and 10 patients are going to die. You have two (and only two) options:',
         answears:[
             {text: 'C)Do nothing and let 10 patients die.'},
-            {text: 'C)cut up a healthy patient into organs and save the 10 who need a transplant.'}
+            {text: 'C)cut up a healthy patient into organs and save the 10 who need a transplant.'},
+            {obr:"pictures/dilema3.png"}
         ]
     }
 ]

@@ -1,4 +1,24 @@
-
+.pat{
+    background-color: white;
+    outline-width: thick;
+    outline-color: white;
+    outline-style: solid;
+    outline-offset: 5px;
+    border-radius: 10px;
+    font-size: 120%;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    width: 50%;
+    height: 65%;
+    padding:1px;
+    margin: auto;
+    margin-top: 2%;
+}
+.obr1{
+    width:90%;
+    height:65%;
+}
 @media only screen and (max-width: 600px) {
     body{
         margin-top: 20%;
