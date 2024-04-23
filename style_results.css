@@ -16,7 +16,17 @@
     margin-top: 2.5%;
 }
 
+.p1{
+  color:#14213D;
+}
+.p2{
+  color:#FCA311;
+}
 
+.p1,
+.p2{
+  font-size: 120%;
+}
 
 .Bentham,
 .Kant{
@@ -42,7 +52,7 @@ table {
 th{
     padding: 20px 30px;
     text-align: center;
-    background-color: #ffffff;
+    background-color: #FCA311;
     
   }
 
@@ -50,7 +60,7 @@ th{
   td{
     padding: 20px 30px;
     text-align: center;
-    background-color: #000000;
+    background-color: #14213D;
   }
 
   @media only screen and (max-width: 600px) {

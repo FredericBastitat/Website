@@ -14,13 +14,13 @@ function checkLoadedPage() {
     else if (currentURL.includes("results")) {
         let table = document.getElementById("MyTable");
         let row = document.createElement("tr");
-        for (let i = 0; i < util*3; i++) {
-                var newCell = document.createElement('td');
+        for (let i = 0; i < deont*3; i++) {
+                var newCell = document.createElement('th');
                 newCell.innerHTML = "";
                 row.appendChild(newCell);
           }
-          for (let i = 0; i < deont*3; i++) {
-            var newCell = document.createElement('th');
+          for (let i = 0; i < util*3; i++) {
+            var newCell = document.createElement('td');
             newCell.innerHTML = "";
             row.appendChild(newCell);
       }
