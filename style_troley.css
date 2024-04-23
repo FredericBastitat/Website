@@ -52,14 +52,11 @@ button:active{
         outline-offset: 5px;
         border-radius: 10px;
         font-size: 100%;
-        width: 30%;
-        padding:1px;
+        width: 40%;
+        height: 150px;
+        padding:2px 5px 2px;
         margin-left: 7.5%;
         margin-right: 7.5%;
-    }
-
-    .answ{
-    margin-top: 0%;
     }
 
 
