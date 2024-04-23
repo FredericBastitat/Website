@@ -22,12 +22,14 @@ h5 {
     text-align: center;
     margin: 2.5% auto;
     width: 20%;
+    
 }
 
 h1 {
     font-size: 300%;
     margin-top: 5%;
     margin-bottom: 5%;
+    height: 7.5%;
 }
 
 h2 {
@@ -63,6 +65,18 @@ h5{
     font-size: 150%;
     outline-offset: 5px;
     margin-top: 50px;
+}
+h6{
+    width: 50%;
+    max-width: 1000px;
+    text-align: center;
+    margin: auto;
+    font-size: 150%;
+    outline-offset: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    color: black;
 }
 
 @media only screen and (max-width: 600px) {

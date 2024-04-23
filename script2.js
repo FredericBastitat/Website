@@ -4,8 +4,6 @@ let econ=parseInt(localStorage.getItem('Economy'))|| 0;;
 let social=parseInt(localStorage.getItem('Social'))|| 0;;
 
 
-window.onload = checkLoadedPage();
-
 //tlacitko
 function ultbtn(x){
     if(questions[questionIndex].answears=="Social"){
@@ -22,9 +20,11 @@ function ultbtn(x){
 //zmena tlacitka
 function Nextq(){
     if (questionIndex < questions.length) {
+        console.log("1");
         questionElement.innerText = questions[questionIndex].question;
         
     } else {
+        console.log("2");
         localStorage.setItem('Social',social);
         localStorage.setItem('Economy',econ);
         window.location.replace('cres.html');
@@ -194,3 +194,4 @@ function checkLoadedPage() {
             console.log(currentURL);
     }
 }
+window.onload = checkLoadedPage();

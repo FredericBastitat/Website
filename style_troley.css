@@ -41,17 +41,17 @@ button:active{
 
 }
 
-    h1{
+    h5{
         width: 75%;
         border-radius: 10px;
-        font-size: 150%;
+        font-size: 120%;
         outline-offset: 5px;
         margin-top: 15%;
     }
     button{
         outline-offset: 5px;
         border-radius: 10px;
-        font-size: 130%;
+        font-size: 100%;
         width: 30%;
         padding:1px;
         margin-left: 7.5%;

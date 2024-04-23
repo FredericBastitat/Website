@@ -67,3 +67,8 @@ th{
     text-align: center;
     background-color: #000000;
   }
+
+  @media only screen and (max-width: 600px) {
+    
+
+}
