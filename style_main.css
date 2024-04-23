@@ -62,17 +62,9 @@ h1{
         
     }
     .test-choice{
-        background-color: white;
-        outline-width: thick;
-        outline-color: white;
-        outline-style: solid;
         outline-offset: 5px;
         border-radius: 10px;
         font-size: 150%;
-        text-align: center;
-        text-decoration: none;
-        color:black;
-        position: relative;
         width: 45%;
         height: 80%;
         margin: 5%;
