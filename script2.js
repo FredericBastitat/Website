@@ -167,19 +167,18 @@ const questions = mixArrays(socialquestions, economyquestions);
 function findClosestPersonalities(inputx, inputy) {
     const personalities = [
         { name: "Winston Churchill",picture:"pictures/churchill.jpg",link:"https://cs.wikipedia.org/wiki/Winston_Churchill", x: 6, y: 3 },
-        { name: "Ludwig von Mises",picture:"xdd",link:"sds", x: 9, y: -4 },
+        { name: "Ludwig von Mises",picture:"pictures/Mises.png",link:"https://en.wikipedia.org/wiki/Ludwig_von_Mises", x: 9, y: -4 },
         { name: "Bernie Sanders",picture:"pictures/BernieSanders.jpg",link:"https://en.wikipedia.org/wiki/Bernie_Sanders", x: -4, y: -4 },
-        { name: "Friedrich Hayek",picture:"xdd",link:"sds", x: 6, y: -6 },
+        { name: "Friedrich Hayek",picture:"pictures/Hayek.png",link:"https://en.wikipedia.org/wiki/Friedrich_Hayek", x: 6, y: -6 },
         { name: "Thomas Paine",picture:"pictures/ThomasPaine.jpg",link:"https://en.wikipedia.org/wiki/Thomas_Paine", x: -2, y: -9 },
-        { name: "Noam Chomsky",picture:"xdd",link:"sds", x: -10, y: -8 },
-        { name: "Robert Mugabe",picture:"xdd",link:"sds", x: -3, y: 6 },
-        { name: "Joseph Stalin",picture:"xdd",link:"sds", x: -7, y: 8 },
-        { name: "Thomas Hobbes",picture:"xdd",link:"sds", x: 7, y: 2 },
-        { name: "Destiny",picture:"xdd",link:"sds", x: 0, y: -7 },
-        { name: "Milton Friedman",picture:"xdd",link:"sds", x: 4, y: -7 },
+        { name: "Noam Chomsky",picture:"pictures/NoamChomsky.png",link:"https://en.wikipedia.org/wiki/Noam_Chomsky", x: -10, y: -8 },
+        { name: "Robert Mugabe",picture:"picturess/RobertMughabe.png",link:"https://en.wikipedia.org/wiki/Robert_Mugabe", x: -3, y: 6 },
+        { name: "Joseph Stalin",picture:"pictures/Stalin.png",link:"https://en.wikipedia.org/wiki/Joseph_Stalin", x: -7, y: 8 },
+        { name: "Thomas Hobbes",picture:"pictures/Hobbes.png",link:"https://en.wikipedia.org/wiki/Thomas_Hobbes", x: 7, y: 2 },
+        { name: "Destiny",picture:"pictures/Destiny.png",link:"https://en.wikipedia.org/wiki/Destiny_(streamer)", x: 0, y: -7 },
+        { name: "Milton Friedman",picture:"pictures/MiltonFriedman.png",link:"https://en.wikipedia.org/wiki/Milton_Friedman", x: 4, y: -7 },
         { name: "J.F.K",picture:"pictures/JFK.jpg",link:"https://en.wikipedia.org/wiki/John_F._Kennedy", x: -3, y: -1 },
-        { name: "T.Roosevelt",picture:"pictures/TheodorRoosevelt.jpg",link:"https://en.wikipedia.org/wiki/Theodore_Roosevelt", x: -4, y: 4 },
-        { name: "xxxxxxxxxxxxxxx",picture:"xdd",link:"sds", x: 0, y: -7 }
+        { name: "T.Roosevelt",picture:"pictures/TheodorRoosevelt.jpg",link:"https://en.wikipedia.org/wiki/Theodore_Roosevelt", x: -4, y: 4 }
     ];
     let closestPersonalities = [];
 
