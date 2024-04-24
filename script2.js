@@ -67,12 +67,12 @@ const socialquestions=[
         polarity:'+'
     },
     {
-        question:'Implementing stricter gun control measures, is necessary to reduce gun violence.',
+        question:'Implementing stricter gun control measures is necessary to reduce gun violence.',
         answears:'Social',
         polarity:'-'
     },
     {
-        question:'Freedom of speech should be limited to prevent the spread of harmful ideas, dissinformation and hoaxes.',
+        question:'Freedom of speech should be limited to prevent the spread of harmful ideas, disinformation and hoaxes.',
         answears:'Social',
         polarity:'-'
     },
@@ -172,7 +172,7 @@ function findClosestPersonalities(inputx, inputy) {
         { name: "Friedrich Hayek",picture:"pictures/Hayek.png",link:"https://en.wikipedia.org/wiki/Friedrich_Hayek", x: 6, y: -6 },
         { name: "Thomas Paine",picture:"pictures/ThomasPaine.jpg",link:"https://en.wikipedia.org/wiki/Thomas_Paine", x: -2, y: -9 },
         { name: "Noam Chomsky",picture:"pictures/NoamChomsky.png",link:"https://en.wikipedia.org/wiki/Noam_Chomsky", x: -10, y: -8 },
-        { name: "Robert Mugabe",picture:"picturess/RobertMughabe.png",link:"https://en.wikipedia.org/wiki/Robert_Mugabe", x: -3, y: 6 },
+        { name: "Robert Mugabe",picture:"pictures/RobertMughabe.png",link:"https://en.wikipedia.org/wiki/Robert_Mugabe", x: -3, y: 6 },
         { name: "Joseph Stalin",picture:"pictures/Stalin.png",link:"https://en.wikipedia.org/wiki/Joseph_Stalin", x: -7, y: 8 },
         { name: "Thomas Hobbes",picture:"pictures/Hobbes.png",link:"https://en.wikipedia.org/wiki/Thomas_Hobbes", x: 7, y: 2 },
         { name: "Destiny",picture:"pictures/Destiny.png",link:"https://en.wikipedia.org/wiki/Destiny_(streamer)", x: 0, y: -7 },
@@ -213,7 +213,7 @@ function checkLoadedPage() {
             circle.style.top=v2;
             break;
         case "/personalities.html":
-            let persorder=findClosestPersonalities(social,econ);
+            let persorder=findClosestPersonalities(econ,social);
             function addinfo(x=[]){
                 for(let i=0;i<4;i++){
                     document.getElementById("name"+(i+1)).innerText=x[i].name;
