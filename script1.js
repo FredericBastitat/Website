@@ -65,10 +65,10 @@ const questions=[
         ]
     },
     {
-        question:'B)A train full of passengers is going under a bridge on which you and a very fat man are standing. The tracks are broken though and if you do nothing the people inside the train will die in the crash. You have two (and only two) options:',
+        question:'B)Five People are tied to the tracks under the bridge on which you and a very fat man are standing. They are rushing towards them and if nothing happens the train will kill them.. You have two (and only two) options:',
         answears:[
-            {text: 'B)Do nothing, in which case all passangers will die.'},
-            {text: 'B)Knock the fat man down to stop the train and save all the passangers (the fat man dies).'},
+            {text: 'B)Do nothing, in which case all people tied to the track will die.'},
+            {text: 'B)Knock the fat man down to stop the train and the people under the bridge (the fat man dies).'},
             {obr:"pictures/dilema2.png"}
         ]
     },

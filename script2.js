@@ -130,7 +130,7 @@ const economyquestions=[
         polarity:'-'
     },
     {
-        question:'Free food',
+        question:'I prefer privatized healthcare, becouse it fosters individual choice and competition, promoting efficiency and innovation in the healthcare sector.',
         answears:'Economy',
         polarity:'+'
     },

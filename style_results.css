@@ -64,6 +64,46 @@ th{
   }
 
   @media only screen and (max-width: 600px) {
-    
 
+    
+    .box2{
+      display:flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: stretch;
+      box-sizing: border-box;
+      align-items: center;
+      margin: 5%;
+      position:relative;
+      margin: auto;
+      -ms-transform:initial;
+      transform: initial;
+  }
+
+.Bentham,
+.Kant{
+  width: 80%;
+  padding: 0%;
+  height: 20%;
+  margin-top: 5%;
+  margin-bottom: 2.5%;
+  margin-right: 10%;
+}
+table {
+  border: 3px solid #696969;
+}
+td,
+th{
+  padding: 10px 15px;
+  
+}
+.meter{
+  margin-bottom: 2.5%;
+  margin-right: 11.5%;
+}
+h3{
+  margin-top: 5%;
+  width: 75%;
+}
 }
